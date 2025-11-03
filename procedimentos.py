@@ -1,7 +1,11 @@
 import pandas as pd
+from dotenv import load_dotenv
+import os 
+
+load_dotenv()
 
 def carregar(procedimento):
-    arquivo_excel = "Procedimento  Marque fácil.xlsx"
+    arquivo_excel = os.getenv("db")
     tabela = pd.read_excel(arquivo_excel)
     coluna = [x for x in tabela[procedimento].to_list() if pd.notna(x) and x not in [None, '']] 
     return coluna

@@ -88,7 +88,7 @@ def analisar_procedimentos_nova_iguacu():
         tabela = pd.read_excel(arquivo)
 
         coluna_procedimento = 'Nova Iguaçu'
-        coluna_quantidade = 'Quantidade Nova iguaçu'
+        coluna_quantidade = 'Quantidade Nova Iguaçu'
 
         if coluna_procedimento not in tabela.columns:
             print(f"Coluna '{coluna_procedimento}' não encontrada!")
