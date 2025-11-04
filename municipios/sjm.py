@@ -87,8 +87,8 @@ def analisar_procedimentos_sjm():
         
         tabela = pd.read_excel(arquivo)
 
-        coluna_procedimento = 'São joão de meriti'
-        coluna_quantidade = 'Quantidade São joão de meriti'
+        coluna_procedimento = 'São Joao de Meriti'
+        coluna_quantidade = 'Quantidade São Joao de Meriti'
 
         if coluna_procedimento not in tabela.columns:
             print(f"Coluna '{coluna_procedimento}' não encontrada!")

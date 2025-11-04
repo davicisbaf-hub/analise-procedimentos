@@ -87,8 +87,8 @@ def analisar_procedimentos_mage():
         
         tabela = pd.read_excel(arquivo)
 
-        coluna_procedimento = 'Magé'
-        coluna_quantidade = 'Quantidade Magé'
+        coluna_procedimento = 'Mage'
+        coluna_quantidade = 'Quantidade Mage'
 
         if coluna_procedimento not in tabela.columns:
             print(f"Coluna '{coluna_procedimento}' não encontrada!")
